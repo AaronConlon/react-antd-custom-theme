@@ -12,6 +12,7 @@ import {
   SunOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { GithubOutlined } from "@ant-design/icons";
 import type { MenuProps, SegmentedProps } from "antd";
 import {
   Avatar,
@@ -135,6 +136,15 @@ function AdminLayout() {
             icon={<SettingOutlined />}
             onClick={openSettings}
           />
+          <a
+            href="https://github.com/AaronConlon/react-antd-custom-theme"
+            target="_blank"
+            rel="noreferrer"
+            className={styles["admin-layout__github-link"]}
+            aria-label="GitHub repository"
+          >
+            <GithubOutlined className={styles["admin-layout__github-icon"]} />
+          </a>
           <Dropdown menu={{ items: avatarMenuItems }} trigger={["click"]}>
             <Avatar style={{ cursor: "pointer" }} icon={<UserOutlined />} />
           </Dropdown>

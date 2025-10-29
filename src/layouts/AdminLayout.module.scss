@@ -30,6 +30,25 @@
     gap: 16px;
   }
 
+  &__github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: inherit;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--app-color-primary);
+    }
+  }
+
+  &__github-icon {
+    font-size: 20px;
+  }
+
   &__header {
     width: 100%;
   }
@@ -76,6 +95,9 @@
     :global(.ant-menu-item),
     :global(.ant-menu-submenu-title) {
       color: var(--sider-text-color);
+    }
+    :global(.ant-menu-item-selected) {
+      color: #fff;
     }
   }
 
