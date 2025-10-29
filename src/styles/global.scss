@@ -1,0 +1,38 @@
+:root {
+  --text-color: var(--app-color-text);
+  --text-color-secondary: var(--app-color-text-secondary);
+  --sider-text-color: var(--app-color-text);
+  --sider-border-color: var(--app-color-border-secondary);
+  --card-border-color: var(--app-color-border-secondary);
+  --layout-bg: var(--app-bg-layout);
+  --sider-bg: var(--app-bg-container);
+  --card-bg: var(--app-bg-container);
+  color-scheme: light;
+}
+
+[data-theme-mode="dark"] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: var(--layout-bg);
+  color: var(--text-color);
+  overflow: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}

@@ -1,0 +1,23 @@
+.test-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__form {
+    padding: 16px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--card-border-color);
+  }
+
+  &__table {
+    background: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--card-border-color);
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

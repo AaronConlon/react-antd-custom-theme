@@ -1,0 +1,31 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__card {
+    height: 100%;
+
+    .ant-card-head {
+      min-height: 48px;
+    }
+  }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
